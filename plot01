@@ -1,0 +1,32 @@
+;  $Id: //depot/idl/IDL_71/idldir/examples/doc/plot/plot01#1 $
+
+;  Copyright (c) 2005-2009, ITT Visual Information Solutions. All
+;       rights reserved.
+; 
+; This batch file defines variables used in examples in
+; Chapter 10, "Plotting" of _Using IDL_.
+
+; The following are example data from a fictitious study of Pacific
+; Northwest Salmon fisheries. In the examples, these data are used
+; to represent fish populations sampled in the years 1967, 1970, and
+; from 1975 to 1983. The vectors defined  represent the number of
+; fish counted, in thousands.
+
+thin=[4,1]
+intermediate=[4,3]
+thick=[4,2]
+
+; Construct an array containing all of the SAT data.
+
+ALLPTS = [[thin], [intermediate], [thick]]
+
+; Construct a vector in which each element contains the year of the score.
+; Create a variable containing the number of elements in the YEAR vector
+; minus one.
+
+PLANET = [1, 2]
+N1 = N_ELEMENTS(PLANET) - 1
+; Construct a vector of names for lines.
+
+NAMES=['thin','intermediate', 'thick']
+
